@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    width: 80%;
+     margin: 0 auto;} 
+.header{
+    background-image: url(../images/banner.png);
+    height: 231px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+}
+/* menu */
+
+.menu{
+    min-height: 40px;
+    background-color: blue;
+    text-align: center;
+    border-radius: 5px;
+
+}
+.menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: large;
+    color: white;
+    padding: 0 10px;
+    line-height: 40px;
+}
+.menu ul ul{
+    position: absolute;
+    display:none ;
+    list-style: none;
+    width: 200px;
+    box-shadow: 0 0 2px gray;
+    background-color: white;
+    border-radius: 3px;
+    text-align: left;
+}
+.menu ul ul li{
+    display: block;
+}
+.menu ul ul a{
+    display: block;
+    color:blue;
+    text-decoration: none;
+    font-size: large;
+    font-variant: small-caps;
+    padding: 0 10px;
+    line-height: 30px;
+    z-index: 1000;
+}
+.menu ul a:hover{
+    color: gray;
+    background-color: white;
+}
+.menu ul li:hover ul{
+   display: block;
+}
+.menu .active{
+    color: red;
+}
+/* marquee */
+.marquee{
+    display: flex;
+    line-height: 38px;
+}
+.marquee input{
+    text-align: center;
+    position: relative;
+}
+.marquee button{
+    background-color: red;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+.marquee button:hover{
+    transform: scale(1.00009);
+}
+marquee{
+    width: 68%;
+    
+    min-height: 25px;
+    z-index: -1;
+    color: maroon;
+}
+.content{
+    width: 100%;
+    height: auto;
+    min-height: 800px;
+    display:flex;
+}
+.content1{
+    width: 75%;
+    background-color: lightblue;
+    min-height: 800px;
+
+}
+.content1 iframe{
+    width: 100%;
+    height: 800px;
+}
+.content2{
+    width: 25%;
+    background-color: lightgoldenrodyellow;
+    min-height: 800px;
+    margin-bottom: 10px;
+}
+.thongbao .widthR{
+    width: 100%;
+
+}
+.thongbao ul{
+    list-style: none;
+
+}
+.thongbao ul a{
+    display: block;
+    background-image: url(../images/icons8-next-page-16.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 15px;
+    padding: 5px 40px;
+    text-decoration: none;
+}
+.thongbao ul a:hover{
+    color: red;
+}
+.widthR img{
+    width: 100%;
+    padding: 10px 0;
+}
+.widthR img:hover{
+    box-shadow: 0 5px 5px gray;
+}
+/* footer */
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* padding: 50px 100px; */
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .footer .noi-dung{
+    margin-right: 30px;
+}
+footer  .footer .noi-dung.about{
+    width:40%;
+}
+footer .footer .noi-dung.about h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+/* footer .footer .noi-dung.about h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+} */
+footer .footer .noi-dung.about p{
+    color: #999;
+}
+/*Thiết Lập Cho Thành Phần Icon Mạng Xã Hội*/
+
+.icon{
+    margin-top: 40px;
+    margin-left: 40px;
+    display: flex;
+}
+.icon li {
+    list-style: none;
+}
+.icon li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.icon li a:hover{
+    background: gray;
+}
+.icon li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.icon li a .fa-brands{
+    color: #fff;
+    font-size: 20px;
+}
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+/* .links h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+} */
+.links{
+   position: relative;
+   width: 25%;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a{
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.links ul li a:hover{
+    color: #fff;
+}
+.contact h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+/* .contact h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+} */
+.contact{
+    margin-top: 15px;
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: black;
+}
+.contact .info li a{
+    color: black;
+    text-decoration: none;
+}
+.form{
+   display: flex;
+}
+.bt {
+    display: inline-block;
+    background: gray;
+    color: inherit;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin-top:16px;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+.form__field {
+    width: 90%;
+    background: #fff;
+    color: black;
+    font: inherit;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+    border: 0;
+    outline: 0;
+    padding: 8px 4px;
+}
